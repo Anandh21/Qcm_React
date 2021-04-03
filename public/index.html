@@ -24,20 +24,197 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
     <title>React App</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+<!--  <div class="container">
+    <form action="" method="POST">
+      <div class="mb-3">
+        <label for="lastname" class="form-label ">Votre nom</label>
+        <input type="text" class="form-control " id="lastname" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="firstname" class="form-label">Votre prénom</label>
+        <input type="password" class="form-control" id="firstname">
+      </div>
+      <div>
+        <h4>À quoi sert React?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q0_a1" value="q0_a1">
+          <label class="form-check-label" for="q0_a1">à administrer des bases de données</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q0_a2" value="q0_a2">
+          <label class="form-check-label" for="q0_a2">à créer des interfaces utilisateurs en Javascript </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q0_a3" value="q0_a3">
+          <label class="form-check-label" for="q0_a3">à envoyer des requêtes réseau avec Javascript</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q0_a4" value="q0_a4">
+          <label class="form-check-label" for="q0_a4">à rien</label>
+        </div>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+      </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+      <div>
+        <h4>Sur quel concept repose React ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1_a1" value="q1_a1">
+          <label class="form-check-label" for="q1_a1">les modules</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1_a2" value="q1_a2">
+          <label class="form-check-label" for="q1_a2">les services </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1_a3" value="q1_a3">
+          <label class="form-check-label" for="q1_a3">les composants</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q1_a4" value="q1_a4">
+          <label class="form-check-label" for="q1_a4"> les microservices</label>
+        </div>
+
+      </div>
+
+      <div>
+        <h4>Qui développe React ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2_a1" value="q2_a1">
+          <label class="form-check-label" for="q2_a1">Google</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2_a2" value="q2_a2">
+          <label class="form-check-label" for="q2_a2">Twitter</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2_a3" value="q2_a3">
+          <label class="form-check-label" for="q2_a3">Apple</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q2_a4" value="q2_a4">
+          <label class="form-check-label" for="q2_a4"> Facebook</label>
+        </div>
+
+      </div>
+
+      <div>
+        <h4>À quoi servent les 'props' ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3_a1" value="q3_a1">
+          <label class="form-check-label" for="q3_a1">à passer des propriétés</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3_a2" value="q3_a2">
+          <label class="form-check-label" for="q3_a2">à créer un état pour le composant</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3_a3" value="q3_a3">
+          <label class="form-check-label" for="q3_a3">à afficher le composant</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q3_a4" value="q3_a4">
+          <label class="form-check-label" for="q3_a4"> à casser les pieds</label>
+        </div>
+
+      </div>
+
+      <div>
+        <h4>À quoi servent les 'props' ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4_a1" value="q4_a1">
+          <label class="form-check-label" for="q4_a1">à faire des appels à la base de données</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4_a2" value="q4_a2">
+          <label class="form-check-label" for="q4_a2">à rajouter des types à Javascript</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4_a3" value="q4_a3">
+          <label class="form-check-label" for="q4_a3">à fournir une surcouche syntaxique à Javascript pour appeler les fonctions React</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="flexRadioDefault" id="q4_a4" value="q4_a4">
+          <label class="form-check-label" for="q4_a4"> c'est un autre nom pour Javascript</label>
+        </div>
+      </div>
+
+      <div>
+        <h4>Qu'est-ce qu'un 'state' ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q5_a1" value="q5_a1">
+          <label class="form-check-label" for="q5_a1"> un stockage permanent</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q5_a2" value="q5_a2">
+          <label class="form-check-label" for="q5_a2">un stockage interne du composant</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q5_a3" value="q5_a3">
+          <label class="form-check-label" for="q5_a3">aucun des deux</label>
+        </div>
+
+      </div>
+
+      <div>
+        <h4>Quels sont les avantages de React ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q6_a1" value="q6_a1">
+          <label class="form-check-label" for="q6_a1"> il permet de générer des baslises HTML dynamiquement sur le navigateur</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q6_a2" value="q6_a2">
+          <label class="form-check-label" for="q6_a2">il permet d'améliorer les performances en réduisant les échanges réseau</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q6_a3" value="q6_a3">
+          <label class="form-check-label" for="q6_a3">il permet de faire un site le plus léger possible</label>
+        </div>
+
+      </div>
+
+      <div>
+        <h4>Comment puis-je faire un affichage conditionnel ?</h4>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q7_a1" value="q7_a1">
+          <label class="form-check-label" for="q7_a1"> En utilisant une fonction</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q7_a2" value="q7_a2">
+          <label class="form-check-label" for="q7_a2"> En passant des paramètres à la fonction 'ReactDOM.render'</label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="q7_a3" value="q7_a3">
+          <label class="form-check-label" for="q7_a3">En utilisant une expression ternaire</label>
+        </div>
+      </div>
+
+      <div class="mb-3">
+        <h4> 'react-dom-router' permet de faire varier l'affichage en fonction de l'URL </h4>
+        <input type="checkbox" class="btn-check" id="q8" autocomplete="off" value="q8">
+        <label class="btn btn-outline-primary" for="q8"> toggle </label><br>
+      </div>
+
+      <div class="mb-3">
+        <h4> 'create-react-app' permet de générer un projet React préconfiguré </h4>
+        <input type="checkbox" class="btn-check" id="q9" autocomplete="off" value="q9">
+        <label class="btn btn-outline-primary" for="q9"> toggle </label><br>
+      </div>
+
+
+
+
+
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   </body>
 </html>
